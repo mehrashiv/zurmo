@@ -2,17 +2,7 @@ FROM ubuntu:16.04
 
 RUN apt-get -y update && apt-get install -y apache2
 
-RUN apt-get update && apt-get install -y php php-mysql php-memcached
-
-RUN apt-get update && apt-get install -y php-curl php-apcu
-
-RUN apt-get update && apt-get install -y php-soap php-imap
-
-RUN apt-get update && apt-get install -y php-gd php-pear
-
-RUN apt-get update && apt-get install -y php-mcrypt php-net-imap php-net-ldap
-
-RUN apt-get update && apt-get install -y libapache2-mod-php php-mbstring
+RUN apt-get update && apt-get install -y php php-mysql php-memcached php-curl php-apcu php-soap php-imap php-gd php-pear php-mcrypt php-net-imap php-net-ldap libapache2-mod-php php-mbstring
 
 RUN a2enmod deflate
 
