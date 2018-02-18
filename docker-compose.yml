@@ -1,0 +1,10 @@
+db:
+    image:mysql
+    environment:
+	MYSQL_ROOT_PASSWORD: zurmo
+	MYSQL_DATABASE: zurmo
+	MYSQL_USER: zurmo
+	MYSQL_PASSWORD: zurmo
+
+zurmo:
+    image:ubuntu:16.04

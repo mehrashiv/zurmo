@@ -1,0 +1,16 @@
+[mysqld]
+sql-mode=""
+server-id=master-01
+character-set-server = utf8
+collation-server = utf8_unicode_ci
+default-storage-engine = INNODB
+max_sp_recursion_depth = 100
+max_allowed_packet = 20M
+thread_stack = 525K
+optimizer-search-depth = 0
+log_bin = 0
+#local_infile=ON
+log-bin-trust-function-creators = 1
+datadir = /var/lib/mysql
+#!includedir /etc/mysql/conf.d/
+#!includedir /etc/mysql/mysql.conf.d/
